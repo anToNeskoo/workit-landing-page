@@ -13,9 +13,11 @@
 }
 
 .container{
-    width: 1130px;
-    /* margin-block-end: 140px;
-    margin-block-start: 140px; */
+  max-width: 1280px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
 }
 
 .header{
@@ -88,7 +90,7 @@
     left: 5px;
 }
 
-.Data{
+.data{
     display: flex;
     position: absolute;
     width: 635px;
@@ -99,7 +101,7 @@
     flex-direction: column;
 }
 
-.Data_text{
+.data_text{
     font-family: "Manrope", sans-serif;
     font-weight: 600;
     font-size: 80px;
@@ -108,11 +110,11 @@
     color: var(--white)
 }
 
-.Data_text span {
+.data_text span {
     position: relative; 
     display: inline-block;
 }
-  .Data_text span::after{
+  .data_text span::after{
         content: " ";
         position: absolute;
         display: block;
@@ -125,7 +127,7 @@
         margin-right: 10px;
 
 }
-.Data_button{
+.data_button{
     display: flex;
     justify-content: center;
     margin-top: 40px;
@@ -133,7 +135,7 @@
  
     
 }
-.Data_button button{
+.data_button button{
     font-family: "Manrope", sans-serif;
     background-color: var(--eucaplyptus) ;
     width: 161px;
@@ -151,7 +153,7 @@
 
 
 
-.Main{
+.main{
     max-width: 1130px;
     background-color: var(--ghost-white);
     height: 960px;
@@ -162,7 +164,7 @@
 }
 
 
-.Main_image{
+.main_image{
     display: flex;
     justify-content: center; /* Центруємо телефон по горизонталі */
     width: 100%;
@@ -171,7 +173,7 @@
 
 }
 
-.Main_image img{
+.main_image img{
     max-width: 767px; /* Розмір як у макеті Figma */
     width: 100%;
     height: auto;
@@ -182,7 +184,7 @@
 }
 
 
-.Main_info{
+.main_info{
     position: absolute;
     top: 380px;
     display: flex;
@@ -195,7 +197,7 @@
     height: 308px;
 }
 
-.Main_info div{
+.main_info div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -204,13 +206,13 @@
 
 
 
-.Main_info div img{
+.main_info div img{
     width: 56px;
     height: 56px;
     margin-block-end: 56px;
 
 }
-.Main_info div .Uparcase{
+.main_info div .Uparcase{
     /* height: 40px; */
     font-family: "Fraunces 144pt", sans-serif;
     margin-block-end: 28px;
@@ -222,7 +224,7 @@
     line-height: 40px;
 }
 
-.Main_info div span{
+.main_info div span{
     /* height: 128px; */
     font-family: "Manrope", sans-serif;
     font-weight: 400;
@@ -232,7 +234,7 @@
     color: var(--dark-purple);
 }
 
-.Before_footer{
+.before_footer{
     margin-block-start: 110px;
     width: 1112px;
     height: 647px;
@@ -247,13 +249,13 @@
 }
 
 
-.Before_footer img{
+.before_footer img{
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.Before_footer .Dashboard{
+.before_footer .dashboard{
     width: 730px;
     height: 413px;
     position: absolute;
@@ -274,7 +276,7 @@
     
 
 }
-.Before_footer .Dashboard::after{
+.before_footer .dashboard::after{
     content: "";
     position: absolute;
     background-image: url('../icons/Group\ 10.svg');
@@ -290,7 +292,7 @@
     z-index: -1;
 }
 
-.Dashboard .Dashboard_text
+.dashboard .dashboard_text
     {
     height: 96px;
     font-family: "Manrope", sans-serif;
@@ -301,7 +303,7 @@
     margin-block-end: 32px;
 }
 
-.Dashboard h2{
+.dashboard h2{
     font-family: "Fraunces 144pt", sans-serif;;
     /* width: 382px; */
     font-weight: 600;
@@ -311,7 +313,7 @@
     margin-block-end: 32px;
 }
 
-.Dashboard button{
+.dashboard button{
     
     font-family: "Manrope", sans-serif;
     background-color: var(--eucaplyptus) ;
@@ -340,7 +342,7 @@ footer{
     margin-inline-end: 501px;
 }
 
-footer .workit-BLACK img{
+footer .workit-black img{
     margin-block-end: 58px;
     width: 95px;
     height: 24px;
