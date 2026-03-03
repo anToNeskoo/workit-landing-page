@@ -1,0 +1,379 @@
+@media (max-width: 767px) {
+    .container{
+        max-width: 360px;
+        padding-inline: 15px;
+        margin-block-end: 32px;
+    }
+     body{
+        /* text-align: center; */
+        overflow-x: hidden;  
+    }
+
+    .header{
+        width: 375px;
+        position: relative;
+        z-index: 1;
+        clip-path: ellipse(150%  100% at 50% 0%);
+        height: 481px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #24053e ;
+        /* background-image: 
+        url('../icons/right_svg.png'), 
+        url('../icons/left_header.svg');
+        
+   
+        background-position: 
+        left 650px top 250px,    Перше кільце: зліва
+        right 619px top 71px;  Друге кільце: справа 
+        
+        background-repeat: no-repeat; */
+       
+    }
+    .head{
+        height: 34px;
+        width: 343px;
+        display: flex;
+        justify-content: space-between;
+    
+        margin-inline-start: 15px;
+        margin-inline-end: 15px;
+    }
+
+    .header_text{
+        display: block;
+        
+        height: 32px;
+        position: relative;
+        font-family: "Manrope", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 200%;
+        letter-spacing: -0.01em;
+        letter-spacing: -0.01em;
+        padding-bottom: 6px;
+        color: var(--white);
+}
+    .header_text::after{
+        content: " ";
+        display: block;
+        width: 124px;
+        height: 3px;
+        left: 0px;
+        bottom: 0px;
+        background-repeat: no-repeat;
+        background-color: var(--eucaplyptus);
+        margin-right: 10px;
+
+    }
+
+
+    
+   /* .header_logo img{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    top:  0px;
+    }    */
+
+
+
+
+
+
+
+
+
+
+    .Data{
+        display: flex;
+        width: 343px;
+        top: 100px;
+        margin-inline-start: 15px;
+        margin-inline-end: 15px;
+        flex-direction: column;
+        margin-block-start: 64px;
+    }  
+
+        .Data_text{
+        font-family: "Manrope", sans-serif;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 100%;
+        text-align: center;
+        color: var(--white)
+    }
+
+
+
+    .Data_text span {
+    position: relative; 
+    display: inline-block;
+    }
+    .Data_text span::after{
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 152px;
+        height: 2px;
+        left: 0px;
+        bottom: 0px;
+        background-repeat: no-repeat;
+        background-color: var(--eucaplyptus);
+        margin-right: 10px;
+
+    }
+    .Data_button{
+        display: flex;
+        justify-content: center;
+        margin-top: 39px;
+        margin-block-end: 55px;
+    }
+
+    .Data_button button{
+        font-family: "Manrope", sans-serif;
+        background-color: var(--eucaplyptus) ;
+        width: 133px;
+        height: 55px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 200%;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: var(--dark-purple)
+}
+
+.Main{
+    position: static;
+    background-color: var(--ghost-white);
+    clip-path: ellipse(150%  100% at 50% 0%);
+    width: 375px;
+    height: 1079px;
+    position: relative;
+    /* clip-path: ellipse(150% 100% at 50% 0%); */
+  
+    /* padding-top: 200px; */
+    /* display: flex;
+    justify-content: center; */
+    display: flex;
+    flex-direction: column;  /* Елементи стають один під одним */
+    align-items: center;
+}
+
+
+.Main_image{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+
+.Main_image img{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        /* Телефон вилазить на хедер, але не перекриває свій контент */
+        margin-top: -142px; 
+        margin-bottom: 40px
+}
+
+
+.Main_info{
+    position: absolute;
+    top: 195px;
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    height: 765px;
+    text-align: center;
+}
+
+.Main_info div{
+    width: 100%;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+/
+}
+
+.Main_info div:first-child{
+    width: 343px;
+    height: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* margin-block-end: 48px; */
+
+}
+
+.Main_info div:last-child{
+    width: 100%;
+    /* height: 108px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-block-end: 0px;
+}
+
+
+.Main_info div .Text{
+    display: flex;
+    flex-direction: column; /* Заголовок над текстом */
+    margin-left: 0px;
+    height: 136px;
+    align-items: center;
+}
+
+.Main_info div img{
+    width: 48px;
+    height: 46px;
+    /* margin-inline-end: 32px; */
+    flex-shrink: 0;
+    align-items: center;
+    margin-block-end: 24px;
+    margin-inline: 0px;
+}
+
+.Main_info div .Text .Uparcase{
+    
+    
+    font-family: "Fraunces 144pt", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 129%;
+    color: var(--dark-purple);
+    /* width: 210px; */
+}
+
+.Before_footer{
+    margin-block-start: 0px;
+    width: 343px;
+    height: 703px;
+    position: relative;
+    /* margin-inline-start: 162px;
+    margin-inline-end: 162px; */
+    padding-block-end:  16px;
+    padding-block-start: 16px;
+  
+}
+
+.Before_footer img{
+    position: absolute;
+    top: 100px;
+    width: 281px;
+    height: 281px;
+}
+
+.Before_footer .Dashboard{
+    width: 343px;
+    height: 375x;
+    position: absolute;
+    top: 328px;
+    padding: 0px;
+   
+    background-color: var(--dark-purple);
+
+    overflow: visible; /* Щоб кільце могло трохи вилазити за межі, якщо треба */
+    z-index: 1;
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.Before_footer .Dashboard::after{
+    display: none;
+    /* content: "";
+    position: absolute;
+    background-image: url('../icons/Group\ 10.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 173px;
+    height: 137px;
+    right: 72px; 
+    bottom: -60px;
+    transform: rotate(-145deg);
+    z-index: -1; */
+}
+
+.Dashboard .Dashboard_text
+    {
+    width: 281px;
+    height: 168px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--white);
+    margin-block-end: 24px;
+}
+
+.Dashboard h2{
+    font-family: "Fraunces 144pt", sans-serif;;
+    /* width: 382px; */
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--white);
+    margin-block-end: 16px;
+}
+
+.Dashboard button{
+    font-family: "Manrope", sans-serif;
+    background-color: var(--eucaplyptus) ;
+    width: 125px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 200;
+    letter-spacing: -0.01em;
+    color: var(--dark-purple);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 80px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    width: 116px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center; 
+    width: 343px;
+    height: 102px;
+    margin-block-start: 72px;
+}
+
+
+footer .workit-BLACK img{
+    margin-block-end: 58px;
+    width: 95px;
+    height: 24px;
+
+}
+
+footer div {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 28x;
+}
+
+footer div img {
+    width: 20px;  
+    height: auto;
+    cursor: pointer;
+} 
+
+
+}

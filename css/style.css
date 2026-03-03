@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--dark-purple: #24053e;
+	--davy-s-grey: #584d62;
+	--eucaplyptus: #44ffa1;
+	--ghost-white: #fcf8ff;
+	--white: #fff;
+}
+
+.container{
+    width: 1130px;
+    /* margin-block-end: 140px;
+    margin-block-start: 140px; */
+}
+
+.header{
+    position: relative;
+    z-index: 1;
+    clip-path: ellipse(150% 100% at 50% 0%);  
+    width: 1130px;
+    height: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24053e ;
+    background-image: 
+        url('../icons/right_svg.png'), 
+        url('../icons/left_header.svg');
+        
+    /* Налаштовуємо їх розташування */
+    background-position: 
+        right 0px top 314px,   /* Перше кільце: зліва */
+        left 0px top 116px; /* Друге кільце: справа */
+        
+    background-repeat: no-repeat;
+    /* Щоб кільця не зникали на маленьких екранах, можна додати: */
+    
+}
+
+.head{
+    height: 50px;
+    width: 1130px;
+    position: absolute;
+    top: 56px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_text{
+    display: block;
+    top: 0px;
+    position: relative;
+    right: 5px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 178%;
+    letter-spacing: -0.01em;
+    padding-bottom: 6px;
+
+
+    color: var(--white);
+}
+    .header_text::after{
+        content: " ";
+        display: block;
+        width: 140px;
+        height: 3px;
+        left: 0px;
+        bottom: 0px;
+        background-repeat: no-repeat;
+        background-color: var(--eucaplyptus);
+        margin-right: 10px;
+
+    }
+
+.header_logo img{
+    position: absolute;
+    width: 95px;
+    height: 24px;
+    top:  0px;
+    left: 5px;
+}
+
+.Data{
+    display: flex;
+    position: absolute;
+    width: 635px;
+    top: 146px;
+
+    margin-inline-start: 240px;
+    margin-inline-end: 243px;
+    flex-direction: column;
+}
+
+.Data_text{
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--white)
+}
+
+.Data_text span {
+    position: relative; 
+    display: inline-block;
+}
+  .Data_text span::after{
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 279px;
+        height: 3px;
+        left: 0px;
+        bottom: 0px;
+        background-repeat: no-repeat;
+        background-color: var(--eucaplyptus);
+        margin-right: 10px;
+
+}
+.Data_button{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  
+ 
+    
+}
+.Data_button button{
+    font-family: "Manrope", sans-serif;
+    background-color: var(--eucaplyptus) ;
+    width: 161px;
+    height: 61px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 178%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--dark-purple)
+}
+
+
+
+
+
+.Main{
+    max-width: 1130px;
+    background-color: var(--ghost-white);
+    height: 960px;
+    position: relative;
+    /* clip-path: ellipse(150% 100% at 50% 0%); */
+    margin-top: -150px;  
+    padding-top: 200px;
+}
+
+
+.Main_image{
+    display: flex;
+    justify-content: center; /* Центруємо телефон по горизонталі */
+    width: 100%;
+    position: relative;
+    /* Ставимо телефон ПОВЕРХ фону хедера */
+
+}
+
+.Main_image img{
+    max-width: 767px; /* Розмір як у макеті Figma */
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* Піднімаємо телефон вгору на закруглений фон */
+    margin-top: -277px;
+    z-index: 10;
+}
+
+
+.Main_info{
+    position: absolute;
+    top: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1114px;
+    /* margin-inline-start: 162px;
+    margin-inline-end: 162px; */
+    margin-block-start: 68px;
+    height: 308px;
+}
+
+.Main_info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.Main_info div img{
+    width: 56px;
+    height: 56px;
+    margin-block-end: 56px;
+
+}
+.Main_info div .Uparcase{
+    /* height: 40px; */
+    font-family: "Fraunces 144pt", sans-serif;
+    margin-block-end: 28px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+    text-align: center;
+    color: var(--dark-purple);
+    line-height: 40px;
+}
+
+.Main_info div span{
+    /* height: 128px; */
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    text-align: center;
+    color: var(--dark-purple);
+}
+
+.Before_footer{
+    margin-block-start: 110px;
+    width: 1112px;
+    height: 647px;
+    position: relative;
+    /* margin-inline-start: 162px;
+    margin-inline-end: 162px; */
+    padding-block-end: 62px;
+    padding-block-start: 62px;
+  
+    
+
+}
+
+
+.Before_footer img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Before_footer .Dashboard{
+    width: 730px;
+    height: 413px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--dark-purple);
+    padding-block-end: 62px;
+    padding-block-start: 62px;
+    padding-inline-start: 62px;
+    /* background-image:  url('../icons/right_svg.png');
+    background-repeat: no-repeat;
+    background-position: right 72px top 263px;
+    background-position-x: 113%; */
+    overflow: visible; /* Щоб кільце могло трохи вилазити за межі, якщо треба */
+    z-index: 1;
+    margin-block-end: 62px;
+    
+    
+
+}
+.Before_footer .Dashboard::after{
+    content: "";
+    position: absolute;
+    background-image: url('../icons/Group\ 10.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 173px;
+    height: 137px;
+
+  
+    right: 72px; 
+    bottom: -60px;
+    transform: rotate(-113deg);
+    z-index: -1;
+}
+
+.Dashboard .Dashboard_text
+    {
+    height: 96px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    color: var(--white);
+    margin-block-end: 32px;
+}
+
+.Dashboard h2{
+    font-family: "Fraunces 144pt", sans-serif;;
+    /* width: 382px; */
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 114%;
+    color: var(--white);
+    margin-block-end: 32px;
+}
+
+.Dashboard button{
+    
+    font-family: "Manrope", sans-serif;
+    background-color: var(--eucaplyptus) ;
+    width: 161px;
+    height: 61px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 178%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--dark-purple);
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    width: 116px;
+    
+    margin-inline-start: 501px;
+    margin-inline-end: 501px;
+}
+
+footer .workit-BLACK img{
+    margin-block-end: 58px;
+    width: 95px;
+    height: 24px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+footer div img {
+    width: 20px;  /* Підправ розмір під макет */
+    height: auto;
+    cursor: pointer;
+} 
+
