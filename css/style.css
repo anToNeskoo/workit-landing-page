@@ -60,6 +60,7 @@
     position: relative;
     right: 5px;
     font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
     font-size: 18px;
     line-height: 178%;
@@ -102,8 +103,9 @@
 }
 
 .data_text{
-    font-family: "Manrope", sans-serif;
+    font-family: "Fraunces 144pt", sans-serif;
     font-weight: 600;
+    font-optical-sizing: auto;
     font-size: 80px;
     line-height: 100%;
     text-align: center;
@@ -137,7 +139,8 @@
 }
 .data_button button{
     font-family: "Manrope", sans-serif;
-    background-color: var(--eucaplyptus) ;
+    background-color: var(--eucaplyptus);
+    font-optical-sizing: auto;
     width: 161px;
     height: 61px;
 
@@ -153,7 +156,7 @@
 
 
 
-.main{
+.main-section{
     max-width: 1130px;
     background-color: var(--ghost-white);
     height: 960px;
@@ -212,10 +215,10 @@
     margin-block-end: 56px;
 
 }
-.main_info div .Uparcase{
-    /* height: 40px; */
+.main_info div .uparcase{
     font-family: "Fraunces 144pt", sans-serif;
     margin-block-end: 28px;
+    font-optical-sizing: auto;
     font-weight: 600;
     font-size: 32px;
     line-height: 125%;
@@ -228,19 +231,18 @@
     /* height: 128px; */
     font-family: "Manrope", sans-serif;
     font-weight: 400;
+    font-optical-sizing: auto;
     font-size: 18px;
     line-height: 178%;
     text-align: center;
     color: var(--dark-purple);
 }
 
-.before_footer{
+.second-section{
     margin-block-start: 110px;
     width: 1112px;
     height: 647px;
     position: relative;
-    /* margin-inline-start: 162px;
-    margin-inline-end: 162px; */
     padding-block-end: 62px;
     padding-block-start: 62px;
   
@@ -249,13 +251,13 @@
 }
 
 
-.before_footer img{
+.second-section img{
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.before_footer .dashboard{
+.second-section .dashboard{
     width: 730px;
     height: 413px;
     position: absolute;
@@ -276,7 +278,7 @@
     
 
 }
-.before_footer .dashboard::after{
+.second-section .dashboard::after{
     content: "";
     position: absolute;
     background-image: url('../icons/Group\ 10.svg');
@@ -297,6 +299,7 @@
     height: 96px;
     font-family: "Manrope", sans-serif;
     font-weight: 400;
+    font-optical-sizing: auto;
     font-size: 18px;
     line-height: 178%;
     color: var(--white);
@@ -304,9 +307,10 @@
 }
 
 .dashboard h2{
-    font-family: "Fraunces 144pt", sans-serif;;
+    font-family: "Manrope", sans-serif;
     /* width: 382px; */
-    font-weight: 600;
+    font-weight: 700;
+    font-optical-sizing: auto;
     font-size: 56px;
     line-height: 114%;
     color: var(--white);

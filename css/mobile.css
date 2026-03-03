@@ -290,17 +290,7 @@
 
 .Before_footer .Dashboard::after{
     display: none;
-    /* content: "";
-    position: absolute;
-    background-image: url('../icons/Group\ 10.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 173px;
-    height: 137px;
-    right: 72px; 
-    bottom: -60px;
-    transform: rotate(-145deg);
-    z-index: -1; */
+
 }
 
 .Dashboard .Dashboard_text
