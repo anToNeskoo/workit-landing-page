@@ -242,7 +242,7 @@
 .Main_info div .Text .Uparcase{
     
     
-    font-family: "Fraunces 144pt", sans-serif;
+    font-family: "Fraunces", sans-serif;
     font-weight: 600;
     font-size: 28px;
     line-height: 129%;
@@ -306,7 +306,7 @@
 }
 
 .Dashboard h2{
-    font-family: "Fraunces 144pt", sans-serif;;
+    font-family: "Fraunces", sans-serif;;
     /* width: 382px; */
     font-weight: 600;
     font-size: 32px;
