@@ -11,9 +11,31 @@
 	--ghost-white: #fcf8ff;
 	--white: #fff;
 }
+.fraunces{
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+.manrope-bold{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .container{
-  max-width: 1280px;
+  max-width: 1400px;
   margin-inline-start: auto;
   margin-inline-end: auto;
   padding-inline-start: 20px;
@@ -46,7 +68,9 @@
 
 .head{
     height: 50px;
-    width: 1130px;
+    width: 874px;
+    margin-inline-start: 165px;
+    margin-inline-end: 165px;
     position: absolute;
     top: 56px;
     
@@ -61,9 +85,8 @@ button.header_text{
     top: 0px;
     position: relative;
     right: 5px;
-    font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
+
+    border: none;
     font-size: 18px;
     line-height: 178%;
     letter-spacing: -0.01em;
@@ -71,9 +94,7 @@ button.header_text{
     color: var(--white);
 }
 button.header_text:active{
-    font-family: "Manrope", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+
     line-height: 178%;
     letter-spacing: -0.01em;
     color: var(--eucaplyptus);
@@ -111,10 +132,10 @@ button.header_text:active{
     flex-direction: column;
 }
 
+
+
+
 .data_text{
-    font-family: "Fraunces", sans-serif;
-    font-weight: 600;
-    font-optical-sizing: auto;
     font-size: 80px;
     line-height: 100%;
     text-align: center;
@@ -147,7 +168,7 @@ button.header_text:active{
     
 }
 .data_button button{
-    font-family: "Manrope", sans-serif;
+    
     background-color: var(--eucaplyptus);
     font-optical-sizing: auto;
     width: 161px;
@@ -230,7 +251,7 @@ button.header_text:active{
 
 }
 .main_info div .uparcase{
-    font-family: "Fraunces", sans-serif;
+
     margin-block-end: 28px;
     font-optical-sizing: auto;
     font-weight: 600;
@@ -243,8 +264,7 @@ button.header_text:active{
 
 .main_info div span{
     /* height: 128px; */
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
+
     font-optical-sizing: auto;
     font-size: 18px;
     line-height: 178%;
@@ -308,11 +328,8 @@ button.header_text:active{
     z-index: -1;
 }
 
-.dashboard .dashboard_text span
-    {
+.dashboard .dashboard_text span{
     height: 96px;
-    font-family: "Manrope", sans-serif;
-    font-weight: 400;
     font-optical-sizing: auto;
     font-size: 18px;
     line-height: 178%;
@@ -320,8 +337,13 @@ button.header_text:active{
     margin-block-end: 32px;
 }
 
+.dashboard_text{
+    margin-block-end: 32px;
+}
+
+
 .dashboard h2{
-    font-family: "Fraunces", sans-serif;
+
     /* width: 382px; */
     font-weight: 700;
     font-optical-sizing: auto;
@@ -333,11 +355,11 @@ button.header_text:active{
 
 .dashboard button{
     
-    font-family: "Manrope", sans-serif;
+
     background-color: var(--eucaplyptus) ;
     width: 161px;
     height: 61px;
-    font-weight: 700;
+
     font-size: 18px;
     line-height: 178%;
     letter-spacing: -0.01em;
@@ -362,9 +384,8 @@ footer{
     align-items: center;
     background-color: var(--white);
     width: 116px;
-    
-    margin-inline-start: 501px;
-    margin-inline-end: 501px;
+    margin: 0 auto;
+    margin-block-end: 121px;
 }
 
 footer .workit-black img{
