@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+p,h1 h2 h3 h4 h5 h6{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
 :root {
 	--dark-purple: #24053e;
 	--davy-s-grey: #584d62;
@@ -35,55 +43,53 @@
 }
 
 .container{
-  max-width: 1400px;
+  width: 1130px;
   margin-inline-start: auto;
   margin-inline-end: auto;
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+
+header{
+    width: 100%;
+    padding-top: 56px;
+    max-height: 100%;
+    height: 730px;
+    background-color: #fcf8ff ;
+    background-image: url(../img/header_back.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    block-size: cover;
+    position: relative;
+
+        
+    
 }
 
 .header{
-    position: relative;
-    z-index: 1;
-    clip-path: ellipse(150% 100% at 50% 0%);  
-    width: 1130px;
-    height: 730px;
+    
+    
+}
+
+.flx{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #24053e ;
-    background-image: 
-        url('../icons/right_svg.png'), 
-        url('../icons/left_header.svg');
-        
-    /* Налаштовуємо їх розташування */
-    background-position: 
-        right 0px top 314px,   /* Перше кільце: зліва */
-        left 0px top 116px; /* Друге кільце: справа */
-        
-    background-repeat: no-repeat;
-    /* Щоб кільця не зникали на маленьких екранах, можна додати: */
+    
     
 }
 
 .head{
-    height: 50px;
-    width: 874px;
-    margin-inline-start: 165px;
-    margin-inline-end: 165px;
-    position: absolute;
-    top: 56px;
+    height: 35px;
+    width: 1110px;
     
-    display: flex;
-    justify-content: space-between;
 }
 
-button.header_text{
+ a.header_text{
     background-color: var(--dark-purple);
     color: var(--white);
     display: block;
     top: 0px;
-    position: relative;
+    position: relative; 
     right: 5px;
 
     border: none;
@@ -92,33 +98,45 @@ button.header_text{
     letter-spacing: -0.01em;
     padding-bottom: 6px;
     color: var(--white);
+    border-bottom: #44ffa1 3px solid;
 }
-button.header_text:active{
+.header_text:active{
 
     line-height: 178%;
     letter-spacing: -0.01em;
     color: var(--eucaplyptus);
 }
 
-    .header_text::after{
-        content: " ";
-        display: block;
-        width: 140px;
-        height: 3px;
-        left: 0px;
-        bottom: 0px;
-        background-repeat: no-repeat;
-        background-color: var(--eucaplyptus);
-        margin-right: 10px;
+   
 
-    }
-
-.header_logo img{
+.header_logo a{
     position: absolute;
     width: 95px;
     height: 24px;
     top:  0px;
     left: 5px;
+    content: "";
+}
+
+
+.header_image {
+    position: absolute;
+    bottom: -165px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.header__rings-right{
+    position: absolute;
+    top: 138px;
+    left: 0px;
+}
+.header__rings-left{
+    position: absolute;
+    bottom: 430px;
+    right: 0px;
+    
 }
 
 .data{
@@ -144,19 +162,20 @@ button.header_text:active{
 
 .data_text span {
     position: relative; 
-    display: inline-block;
+    
 }
   .data_text span::after{
         content: " ";
         position: absolute;
         display: block;
-        width: 279px;
+        max-width: 243px;
+        width: 100%;
         height: 3px;
-        left: 0px;
+        right: 0px;
         bottom: 0px;
         background-repeat: no-repeat;
         background-color: var(--eucaplyptus);
-        margin-right: 10px;
+        
 
 }
 .data_button{
@@ -189,37 +208,32 @@ button.header_text:active{
 }
 
 
-
+main{
+    clip-path: ellipse(150% 100% at 50% 0%);
+    background-color: var(--ghost-white);
+    width: 1440px;
+    height: 920px;
+}
 
 .main-section{
-    max-width: 1130px;
-    background-color: var(--ghost-white);
+    width: 1130px;
     height: 960px;
     position: relative;
-    /* clip-path: ellipse(150% 100% at 50% 0%); */
     margin-top: -150px;  
     padding-top: 200px;
 }
 
-
+/*  
 .main_image{
     display: flex;
-    justify-content: center; /* Центруємо телефон по горизонталі */
+    justify-content: center; 
     width: 100%;
     position: relative;
-    /* Ставимо телефон ПОВЕРХ фону хедера */
+    
 
-}
+} */
 
-.main_image img{
-    max-width: 767px; /* Розмір як у макеті Figma */
-    width: 100%;
-    height: auto;
-    position: relative;
-    /* Піднімаємо телефон вгору на закруглений фон */
-    margin-top: -277px;
-    z-index: 10;
-}
+
 
 
 .main_info{
