@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-p,h1 h2 h3 h4 h5 h6{
+p,h1, h2, h3, h4, h5, h6{
     margin: 0;
     padding: 0;
 }
@@ -59,15 +59,17 @@ header{
     background-image: url(../img/header_back.svg);
     background-repeat: no-repeat;
     background-position: center bottom;
-    block-size: cover;
+    /* block-size: cover; */
     position: relative;
+    background-size: cover;
+    
 
         
     
 }
 
 .header{
-    
+    /* position: relative; */
     
 }
 
@@ -209,9 +211,15 @@ header{
 
 
 main{
-    clip-path: ellipse(150% 100% at 50% 0%);
-    background-color: var(--ghost-white);
-    width: 1440px;
+    width: 100%;
+
+    max-height: 100%;
+   
+    /* background-color: #fcf8ff ; */
+    background-image: url(../icons/main_section_bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
     height: 920px;
 }
 
@@ -219,8 +227,8 @@ main{
     width: 1130px;
     height: 960px;
     position: relative;
-    margin-top: -150px;  
-    padding-top: 200px;
+    padding-bottom: 170px;  
+    padding-top: 255px;
 }
 
 /*  
@@ -237,8 +245,8 @@ main{
 
 
 .main_info{
-    position: absolute;
-    top: 380px;
+    /* position: absolute;
+    top: 380px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,15 +254,36 @@ main{
     /* margin-inline-start: 162px;
     margin-inline-end: 162px; */
     margin-block-start: 68px;
-    height: 308px;
+    
 }
 
-.main_info div{
+article{
+    width: 355px;
+    height: 308px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
+
+.info-digit{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 40px;
+    width: 56px;
+    height: 56px;
+    color: var(--dark-purple);
+    border: 1px solid #584d62;
+    justify-content: space-evenly;
+    border-radius: 50%;
+    margin-bottom: 56px;
+
+
+}
+
 
 
 
@@ -290,12 +319,11 @@ main{
     margin-block-start: 110px;
     width: 1112px;
     height: 647px;
+   
     position: relative;
     padding-block-end: 62px;
     padding-block-start: 62px;
   
-    
-
 }
 
 
