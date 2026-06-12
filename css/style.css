@@ -225,8 +225,8 @@ main{
     height: 960px;
     max-height: 100%;
     position: relative;
-    padding-bottom: 170px;  
-    padding-top: 255px;
+    /* padding-bottom: 170px;  
+    padding-top: 255px; */
     background-image: url(../icons/main_section_bg.png);
     background-repeat: no-repeat;
     background-position: center bottom;
