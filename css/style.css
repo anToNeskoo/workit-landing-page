@@ -122,11 +122,15 @@ header{
 
 
 .header_image {
+    background-image: url(/img/Group\ 9_phone_graviks.png);
     position: absolute;
     bottom: -165px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    width: 767px;
+    height: 441px;
+
 }
 
 
@@ -357,8 +361,6 @@ article{
     z-index: 1;
     margin-block-end: 62px;
     
-    
-
 }
 .second-section .dashboard::after{
     content: "";
@@ -372,7 +374,7 @@ article{
   
     right: 72px; 
     bottom: -60px;
-    transform: rotate(-113deg);
+    transform: rotate(-179deg);
     z-index: -1;
 }
 
