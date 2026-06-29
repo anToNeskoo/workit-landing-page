@@ -1,7 +1,7 @@
 @media (max-width: 1439px) {
     .container {
         width: 100%;
-        max-width: 768px;
+        min-width: 768px;
         padding-inline: 5px;
        
         /* justify-content: center; */
@@ -41,6 +41,8 @@
         background-repeat: no-repeat;
 
     }
+
+
 
     .head {
         height: 34px;
@@ -380,7 +382,7 @@
         width: 100%;
         max-width: 689px;
         height: 526px;
-        margin-bottom: ;
+       
     }
      .second-section .dashboard{
         width: 514px;
